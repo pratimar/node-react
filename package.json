@@ -1,0 +1,17 @@
+{
+  "name": "node-react",
+  "version": "1.0.0",
+  "description": "Need for server side rendering - FOUC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pratima",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-react-views": "^0.10.2",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  }
+}

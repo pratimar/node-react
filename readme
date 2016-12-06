@@ -1,0 +1,42 @@
+Need for server side rendering - FOUC
+
+Isomorphic JS - shared JS that runs on both server and client
+JS driven MVCs (angular, backbone, ember) render on DOM load, this can be really slow and can make for a bad user experience
+They are not indexable by search engines
+
+Renders HTML from JS app on Server
+Browser loads with full HTML
+JS loads then bootstraps the application
+
+
+Pros:
+1. Overall better user experience
+2. Search engine indexable
+3. Easy code maintenance - as it is same code base
+
+Steps - 
+1. npm init - creates package.json
+2. npm install express - very basic framework which is light weight
+3. create app.js - main file which routes to sub files; has server object
+4. create routes folder and index.js inside it
+5. inside index.js - does the routing
+6. add views folder - templates will reside here
+7. create index.jsx inside views folder
+8. install express-react-views
+9. Put react component in index.jsx - react on server side is going to transpile jsx to html code
+10. Install react and react-dom
+11. Create layouts folder inside views and create master.jsx inside it - it is the master layout file to render the entire html structure (head, titles, divs etc)
+
+
+node_modules folder - has all the npm installed modules
+jsx to js -> transpiled with babel
+jsx converted to html on the server side
+
+
+app.js forwards the routing request of '/' to index.js
+index.js renders index.jsx on getting request of '/'
+index.jsx imports the master.jsx and renders it
+
+
+
+
